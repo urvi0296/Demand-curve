@@ -59,7 +59,7 @@ scipy==1.0.0
 six==1.11.0
 static3==0.7.0
 statsmodels==0.8.0
-toml==0.9.3
+toml==0.6.5
 tornado==5.0
 traitlets==4.3.2
 tzlocal==1.4
