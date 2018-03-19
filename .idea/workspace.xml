@@ -183,16 +183,6 @@
               <item name="MyDjangoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyDjangoApp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyDjangoApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyDjangoApp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyDjangoApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyDjangoApp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -335,7 +325,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/pages/flot.html" />
     <entry file="file://$PROJECT_DIR$/templates/pages/login.html" />
     <entry file="file://$PROJECT_DIR$/templates/pages/grid.html" />
     <entry file="file://$PROJECT_DIR$/templates/pages/icons.html" />
@@ -474,6 +463,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
