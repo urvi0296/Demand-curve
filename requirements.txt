@@ -14,7 +14,6 @@ django-cleanup==2.1.0
 django-staticfiles==1.2.1
 django-toolbelt==0.0.1
 djangorestframework==3.7.7
-distribute==0.7.3
 docopt==0.6.2
 ecdsa==0.13
 ez-setup==0.9
@@ -57,7 +56,6 @@ reportlab==3.4.0
 requests==2.18.4
 ruamel.yaml==0.15.34
 scipy==1.0.0
-scikit-learn==0.13.1
 six==1.11.0
 static3==0.7.0
 statsmodels==0.8.0
