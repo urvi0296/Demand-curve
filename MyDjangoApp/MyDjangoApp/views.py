@@ -5,7 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
 from bokeh.plotting import figure, output_file
 from bokeh.embed import components
-
+matplotlib.use('Agg')
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
