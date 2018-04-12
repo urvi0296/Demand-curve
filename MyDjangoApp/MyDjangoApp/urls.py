@@ -27,6 +27,8 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, name='login'),
    # url(r'^blog$', 'pages/morris', name='morris'),
     url(r'^$', views.index),
+    url(r'^instructions$', views.instructions, name='instructions'),
+    url(r'^signup/$', views.signup, name='signup'),
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

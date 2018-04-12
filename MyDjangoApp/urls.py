@@ -23,10 +23,12 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^getdata/', views.index),
+    url(r'^getdata/', views.index ,name='getdata'),
     url(r'^login/$', auth_views.login, name='login'),
    # url(r'^blog$', 'pages/morris', name='morris'),
+    url(r'^instructions$', views.instructions, name='instructions'),
     url(r'^$', views.index),
+    url(r'^signup/$', views.signup, name='signup')
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

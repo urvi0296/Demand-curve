@@ -91,11 +91,12 @@
                             </div>
                             <!-- /input-group -->
                         </li>
+
                         <li>
                             <a href="{% url 'getdata' %}"><i class="fa fa-dashboard fa-fw"></i> Optimal Price Calculator</a>
                         </li>
                          <li>
-                            <a href="{% url 'instructions' %}" ><i class="fa fa-dashboard fa-fw"></i> Instructions</a>
+                            <a href="{% url 'instructions' %}"><i class="fa fa-pencil-square-o"></i> Instructions</a>
                         </li>
 
                     </ul>
@@ -138,16 +139,20 @@
                     <!-- /.panel -->
                         <!-- /.panel-heading -->
                         <div class="panel-body">
+
+
+
+
+
+                            <h3>How to input variables</h3>
                             <div class="row">
                                 <div class="col-lg-4">
-                                     <div >
-                                    <form method="post" action="/getdata/">
-                                    <div class="table-responsive">
+                             <div class="table-responsive">
 
                                         <table class="table table-bordered table-hover table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Price</th>
+                                                    <th >Price</th>
                                                     <th>Quantity</th>
                                                 </tr>
                                             </thead>
@@ -165,70 +170,107 @@
                                                     <td align="center"><input type="number" name="p3y" step="any"  value=9500  /></td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="number" name="p4x" step="any"  /></td>
-                                                    <td align="center"><input type="number" name="p4y" step="any"    /></td>
+                                                    <td align="center"><input type="number" name="p4x" value="15"  /></td>
+                                                    <td align="center"><input type="number" name="p4y" value="9450"    /></td>
                                                 </tr>
                                             </tbody>
 
 
 
                                         </table>
-                                         <button class="btn btn-primary btn-block" >Calculate</button>
-                                    </div>
-                                    </form>
-                                     </div>
-                                    <!-- /.table-responsive -->
+                                         </div>
                                 </div>
-                                 <div class="table-responsive">
+                            </div>
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa-square"></i></li>
+                                <li><i class="fa-li fa-square"></i></li>
+                                <li><i class="fa-li fa-square"></i>Enter minimum of three price points along with the historical quantities sold at those prices.</li>
+                            </ul>
+                             <br>
+
+
+
+                            <h3>How to analyse output table</h3>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                            <div class="table-responsive">
 
                                         <table class="table table-bordered table-hover table-striped">
                                             <tbody>
                                                 <tr>
                                                     <td>Elasticity</td>
-                                                    <td>{{ elasticity}}</td>
+                                                    <td>-0.32</td>
                                                 </tr>
                                                 <tr>
-                                                <td>Revenue at Price  {{ price1 }}</td>
-                                                <td>{{ revenue1}}</td>
+                                                <td>Revenue at Price 10</td>
+                                                <td>100000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Revenue at Price {{ price2 }}</td>
-                                                    <td>{{revenue2}}               </td>
+                                                    <td>Revenue at Price 11</td>
+                                                    <td>106700</td>
                                                 </tr>
                                                  <tr>
-                                                    <td>Revenue at Price {{ price3 }}</td>
-                                                    <td>{{revenue3}}              </td>
+                                                    <td>Revenue at Price 13</td>
+                                                    <td>123500</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Revenue at Price  {{ price4 }}</td>
-                                                    <td>{{revenue4}}              </td>
+                                                    <td>Revenue at Price 15 </td>
+                                                    <td>141750</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Optimal Price</td>
-                                                    <td>{{optimalprice}}                </td>
+                                                    <td>15.38</td>
                                                 </tr>
                                              <tr>
                                                     <td>Optimal Quantity</td>
-                                                    <td>{{optimalquantity}}               </td>
+                                                    <td>9293</td>
                                                 </tr>
                                              <tr>
                                                     <td>Optimal Revenue</td>
-                                                    <td>{{optimalrevenue}}               </td>
+                                                    <td>142926</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                <!-- /.col-lg-4 (nested) -->
-                                <div class="col-lg-8">
-
-                                </div>
-                                <!-- /.col-lg-8 (nested) -->
                             </div>
-                            <div id="morris-bar-chart">
+                                </div>
+                                </div>
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa-square"></i>Price elasticity of demand is a measure of the change in the quantity demanded or purchased of a product in relation to its price change.</li>
+                                <li><i class="fa-li  fa-square"></i>Revenue is calculated by multiplying the price at which goods are sold by the quantity of goods sold.</li>
+                                <li><i class="fa-li  fa-square"></i>Optimal values are calculated to obtain maximum profit.</li>
+                            </ul>
+                             <br>
+
+
+
+                            <h3>How to analyse the curve</h3>
+                             <div id="morris-bar-chart">
                                         {{ div | safe }}
                                     </div>
                             <!-- /.row -->
-                        </div>
+                            </div>
+
+                             <ul class="fa-ul">
+                                <li><i class="fa-li  fa-square"></i>The x-axis represents Price, left y-axis represents Quantity and right y-axis represents revenue.</li>
+                                <li><i class="fa-li fa-square"></i>Red curve and Green curve demonstrates the Demand graph and Revenue graph respectively.</li>
+                                <li><i class="fa-li  fa-square"></i>The yellow point represents the optimal price which maximizes revenue.</li>
+                            </ul>
+                            <br><br><br>
+
+                         <h3>How to enable JavaScript</h3>
+                             <ul class="fa-ul">
+
+                                 <li><i class="fa-li  fa-square"></i>The following link will step you through the process of enabling JavaScript.</li>
+                                 <a  href="https://www.enable-javascript.com/" target="_blank">To enable JavaScript</a>
+
+                            </ul>
+                            <br>
+
+
+
+
+
             <p align="center"><b> Note:</b> Optimal Price calculator uses JavaScript, therefore you must have it enabled to use this calculator.</p>
                         <!-- /.panel-body -->
                     </div>
